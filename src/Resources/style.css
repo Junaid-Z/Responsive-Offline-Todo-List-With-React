@@ -73,6 +73,18 @@ input {
 	input.todoText {
 		width: 30vw;
 	}
+
+	.buttonHolder {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	button {
+		margin-top: 10px;
+		display: block;
+		width: 150px;
+	}
 }
 
 @media only screen and (min-width:700px) {

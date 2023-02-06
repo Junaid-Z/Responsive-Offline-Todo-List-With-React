@@ -8,6 +8,7 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
+				<h1>TODOS</h1>
 				<div className="todoList">
 					{todos.map((todo, i) => {
 						return (
@@ -83,6 +84,10 @@ function App() {
 				}>
 					<input type="text" onChange={(e) => { setText(e.target.value) }} value={text} />
 					<button>Add !</button>
+					<button onClick={(e) => {
+						setTodos([]);
+						e.preventDefault();
+					}}>Delete All !</button>
 				</form>
 			</header>
 		</div>
